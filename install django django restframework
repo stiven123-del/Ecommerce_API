@@ -1,0 +1,17 @@
+
+mkdir ecommerce_api
+cd ecommerce_api
+
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+pip install django djangorestframework djangorestframework-simplejwt pillow python-decouple django-filter django-cors-headers
+
+
+django-admin startproject ecommerce .
+
+
+python manage.py startapp products
+python manage.py startapp users
